@@ -1,0 +1,27 @@
+1.Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
+
+
+#First we create class that has a properties of orderID, items and status.
+then we create a method by that calculates the total amount by first looping through items and after that I initalize sum that holds the sum and for each items I will add the item quantity to the sum.
+#Second we create async method inside the class. in the async method I will resolve the promise using settimeout inside the await after that I will change the status to the paid.
+
+2.Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
+
+#First I create a class that has name , role, and array of tasks properties. then I create a prototype method outside of the class that checks if task is completed by accepting a task title as parameter inside the method I loop through the tasks and i check if the given task is the same with the each task title if it is i will change the task status to completed which is changing the completed to true.
+
+#Second I create a method inside the class that returns a promise by rchecking is the task completed is true or false if the promise happens it resolves "All tasks completed!" if not it rejects with "Pending tasks remaining"
+
+3.Build a Candidate class with properties: name, position, and interviews (array of objects with date, status). Add a method scheduleInterview(date) that pushes a new interview with status "pending". Then write an async function sendConfirmation() that returns a Promise that resolves after 1 second with a message "Interview confirmed with [name]", and log the message.
+
+# First I create a class with properties of name,position and interviews then I add a method called scheduleInterview that accepts a parameter as date and adds the date and status which is pending as an object to the interviews using pushe.
+#Second I create an async method that returns a promise with a timeout 1 second and i create a variable that holds the message. then i will resolve the message and also i console log the message.
+
+
+4.Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
+
+
+
+#First I create a class that has the properties of title , instructor and students. then I will create a method that updateProgress with accepting a parameter of name and value. inside the method I first I check if the studentName is the same with accepted studentName if it is i will reassign the student value with the new value.
+
+#Second I will create a async method that returns a promise. inside the promise I check if the progress is 100 if it is it resolves giving certificate if it is not it rejects with "Incomplete progress".
+
