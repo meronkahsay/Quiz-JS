@@ -25,3 +25,8 @@ then we create a method by that calculates the total amount by first looping thr
 
 #Second I will create a async method that returns a promise. inside the promise I check if the progress is 100 if it is it resolves giving certificate if it is not it rejects with "Incomplete progress".
 
+5.Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() that loops through the watchlist and returns a Promise resolving with a list of stocks where currentPrice >= threshold, or rejecting with "No alerts triggered".
+
+
+#First Create a class with a property  that updates the price of watchlist in that class i add a new method that acccepts a symbol and a new price and then it checks if the symbol it accepts is in the watchlist and it it is returns with new watch list with updated price.
+# Second I create a new async in that method I loop through the watchlist and i return a promise then I  check if the current price is more than the threshold and if it is I resolve if it is not I reject with "No alerts triggered".
